@@ -134,7 +134,7 @@ main{
 
 }
 
-@keyframes rotate {
+/* @keyframes rotate {
     from {
         transform: rotate(0deg);
     }
@@ -151,7 +151,7 @@ main{
     to {
         transform: rotate(360deg);
     }
-}
+} */
 
 @media (max-width: 786px) {
 
