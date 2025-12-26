@@ -64,37 +64,37 @@ main nav img {
 
 .rotating-div1{
     background-color: #eef6ff;
-    /* height: 90dvh;
-    width:  90dvh; */
-    height: 90vmin;
-    width: 90vmin;
+    height: 90dvh;
+    width:  90dvh;
+    /* height: 90vmin;
+    width: 90vmin; */
 }    
 
 .rotating-div2{ 
     background-color: var(--backgbk);
-    /* width: 70dvh;
-    height: 70dvh; */
+    width: 70dvh;
+    height: 70dvh;
 
-    width: 70vmin;
-    height: 70vmin;
+    /* width: 70vmin;
+    height: 70vmin; */
 }
 
 .rotating-div3{
     background-color: rgba(252, 244, 244, 0.956);
-    width: 50vmin;
-    height: 50vmin;
+    /* width: 50vmin;
+    height: 50vmin; */
 
-    /* height: 50dvh;
-    width:  50dvh; */
+    height: 50dvh;
+    width:  50dvh;
 }
 
 .rotating-div4 {
     background-color: rgba(218, 235, 253, 0.956);
-    /* height: 40dvh;
-    width: 40dvh; */
+    height: 40dvh;
+    width: 40dvh;
 
-    height: 40vmin;
-    width:  40vmin;
+    /* height: 40vmin;
+    width:  40vmin; */
     border: .4rem dashed var(--backgbk);
     animation: rotate 60s linear infinite;
 }
@@ -111,7 +111,7 @@ main nav img {
 .short-profile{
     flex-direction: column;
     gap: 30px;
-    margin-top: 400px;
+    bottom: 15vh;
     position: absolute;
     font-style: italic;
     width: 45%;
