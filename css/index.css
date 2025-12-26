@@ -17,7 +17,7 @@
 body {
     font-family: sans-serif, Roboto, Arial;
     background: radial-gradient(circle at top left, 
-    var(--light-blue) 40%, var(--blue));
+    var(--light-blue) 30%, var(--blue));
     color: var(--text);
     width: 100%;
     height: 100dvh;
@@ -64,64 +64,89 @@ main nav img {
 
 .rotating-div1{
     background-color: #eef6ff;
-    height: 90dvh;
-    width:  90dvh;
-    /* height: 90vmin;
-    width: 90vmin; */
+    /* height: 90dvh;
+    width:  90dvh; */
+    height: 60vmin;
+    width:  60vmin;
 }    
 
 .rotating-div2{ 
     background-color: var(--backgbk);
-    width: 70dvh;
-    height: 70dvh;
+    /* width: 70dvh;
+    height: 70dvh; */
 
-    /* width: 70vmin;
-    height: 70vmin; */
+    width: 55vmin;
+    height: 55vmin;
 }
 
 .rotating-div3{
     background-color: rgba(252, 244, 244, 0.956);
-    /* width: 50vmin;
-    height: 50vmin; */
+    width: 50vmin;
+    height: 50vmin;
 
-    height: 50dvh;
-    width:  50dvh;
+    /* height: 50dvh;
+    width:  50dvh; */
 }
 
 .rotating-div4 {
     background-color: rgba(218, 235, 253, 0.956);
-    height: 40dvh;
-    width: 40dvh;
+    /* height: 40dvh;
+    width: 40dvh; */
 
-    /* height: 40vmin;
-    width:  40vmin; */
-    border: .4rem dashed var(--backgbk);
-    animation: rotate 60s linear infinite;
+    height: 45vmin;
+    width:  45vmin;
+    border: .2rem dashed var(--backgbk);
+    animation: rotate 80s linear infinite;
+}
+
+.rotating-div5 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #eef6ff70;
+    /* height: 40dvh;
+    width: 40dvh; */
+    border-radius: 50%;
+    height: 40vmin;
+    width: 40vmin;
+    animation: counterRotate 80s linear infinite;
+   
 }
         
 .rotating-div4 img {
-    width: min(30vmin, 60vw);
+    width: min(45vmin, 60vw);
     height: auto;
     border-radius: 50%;
-    position: absolute;
-    animation: counterRotate 60s linear infinite;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.444);
+    margin-top: -11px;
 }
     
 .short-profile{
+    display: flex;
     flex-direction: column;
-    gap: 30px;
-    bottom: 15vh;
-    position: absolute;
-    font-style: italic;
-    width: 45%;
-    text-align: center;
-    font-family: monospace;
-    font-size: clamp(0.9rem, 1vw, 0.5rem);
+    gap: 15px;
+}
 
-    & span{
-        line-height: 1.5rem;
-    }
+.short-profile p, .spec, span {
+    text-align: center;
+    color: #012a64;
+}
+
+.short-profile p {
+    word-spacing: -5pt;
+    font-style: italic;
+    font-family: monospace; 
+    font-size: clamp(2rem, 5vw, 3rem);
+}
+
+.short-profile .spec {
+    font-size: clamp(.5rem, 2.5vw, 1rem);
+    
+    border-bottom: .5px solid var(--blue);
+    padding-bottom: 15px;
+}
+
+.short-profile span {
+    font-size: clamp(.7rem, 2.5vw, 1rem);
 }
 
 a {
@@ -132,8 +157,8 @@ a {
     text-decoration: none;
     background-color: #eef6ff;
     border: none;
-    border-radius: 10px;
-    padding: 8px;
+    border-radius: 15px;
+    padding: 12px;
     font-family: monospace;
     font-style: italic;
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.193);
@@ -163,14 +188,5 @@ a {
     }
     to {
         transform: rotate(360deg);
-    }
-}
-
-@media (max-width: 786px) {
-
-    .short-profile {
-        position: static !important;
-        margin-top: 20px !important;
-        width: 90% !important;
     }
 }
