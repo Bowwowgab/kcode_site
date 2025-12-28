@@ -20,3 +20,15 @@ closesidebar.forEach(c => {
             .classList.remove('mobileview-Nav-contianer-style');
     });
 });
+
+// scroll to the next page from the initial page to the intro page
+const openInropage = document.querySelector('#intro-header-scrollupBtn');
+openInropage.addEventListener('click', () => {
+
+    setTimeout(() => {
+        document.querySelector('#intro-profile').scrollIntoView({
+            behavior: "smooth"
+        });
+    }, 500)
+
+});
