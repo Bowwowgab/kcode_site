@@ -188,7 +188,9 @@ header {
         word-spacing: -4px;
     }
 
-    & .intro-header-myImage {
+}
+
+.intro-header-myImage {
         display: flex;
         align-items: center;
         justify-content: center;
@@ -199,15 +201,15 @@ header {
         margin-top: 30px;
         background-color: white;
 
-        img {
+       & img {
             margin-left: -7px;
             width: 100%;
             height: 100%;
             object-fit: cover;
         }
-    }
+}
 
-    a {
+.intro-header a {
         text-decoration: none;
         margin-top: 40px;
         padding: 10px 20px;
@@ -222,10 +224,9 @@ header {
         &:hover {
             background-color: #258cff;
         }
-    }
+}
 
-
-    & .intro-header-scrollupBtn {
+.intro-header .intro-header-scrollupBtn {
         position: absolute;
         bottom: 5%;
         left: 50%;
@@ -244,8 +245,6 @@ header {
             animation: bounce 1s linear infinite;
         }
     }
-
-}
 
 @keyframes bounce {
 
