@@ -6,43 +6,219 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/index.css">
     <link rel="icon" href="images/logo.jpeg" type="image/jpeg">
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.2/src/regular/style.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.2/src/regular/style.css" />
+    <script src="script/homescript.js" defer></script>
     <title>kcode</title>
 </head>
-    <body>
-       
-        <main>
-            <nav>
-                <img src="images/logo.jpeg" alt="">
-            </nav>
 
-            <section class="rotating-div1">
-                <div class="rotating-div2">
-                    <div class="rotating-div3"> 
-                        <div class="rotating-div4">
-                            <div class="rotating-div5">
-                                <img src="images/myimage.png" alt="loading">
-                            </div>
-                        </div> 
-                    </div> 
+<body>
+    <header>
+
+        <div class="title-logo-MobIcon">
+            <i class="ph ph-text-align-left icon" id="menu-mobileView-Icon"></i>
+            <a href="#home"> <img src="images/logo.jpeg" alt=""></a>
+            <h1>KCode Subfield IT</h1>
+        </div>
+
+        <!-- Mobile view -->
+        <div class="mobileview-Nav-contianer" id="mobileview-Nav-contianer">
+            <div class="mobileview-Nav-firstDiv">
+
+                <div class="coylogo-div">
+                    <img src="images/logo.jpeg" alt="loading">
+                    <h4>KCode Subfield IT</h4>
+                    <i class="ph ph-x icon mobienavbarmenu-a" id="coylogo-div-icon"></i>
                 </div>
+
+                <!-- For the Side Mobile Menu : Fragment from navbar.html -->
+                <div class="mobilenavbarmenu">
+                    <a href="#home" class="mobienavbarmenu-a">
+                        <i class="ph ph-house icon"></i>
+                        Home
+                    </a>
+                    <a href="#skills" class="mobienavbarmenu-a">
+                        <i class="ph ph-share-network icon"></i>
+                        Expertise
+                    </a>
+                    <a href="#about" class="mobienavbarmenu-a">
+                        <i class="ph ph-pen-nib icon"></i>
+                        Profile
+                    </a>
+                    <a href="#contact" class="mobienavbarmenu-a">
+                        <i class="ph ph-address-book icon"></i>
+                        Contact
+                    </a>
+                </div>
+            </div>
+
+            <div class="mobileview-Nav-secondDiv"></div>
+        </div>
+
+        <!-- For the header -->
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#skills">Expertise</a>
+            <a href="#about">Profile</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <!-- First page intro page -->
+    <section class="intro-header" id="intro-header">
+
+        <h2>Hi, I'm Gabriel Kobby</h4>
+
+            <div class="intro-header-myImage">
+                <img src="images/kcode.jpg" alt="">
+            </div>
+
+            <a href="#contact-form">Hire me</a>
+
+            <div class="intro-header-scrollupBtn" id="intro-header-scrollupBtn">
+                <i class="ph ph-caret-double-down icon"></i>
+            </div>
+    </section>
+
+    <!-- the main page -->
+    <main id="home" class="container">
+
+        <!-- the intro page -->
+        <section class="intro-profile" id="intro-profile">
+            <div class="intro-firstDiv">
+                <h2>IT Consultant & Full Stack Engineer</h2>
+                <p>
+                    Delivering secure, scalable solutions across
+                    software, networks, databases, systems, and visual design
+                </p>
+            </div>
+        </section>
+
+        <section id="skills" class="section">
+            <h3>Professional Expertise</h3>
+            <div class="skills-grid">
+                <div class="card card-skills">
+                    <img src="images/1.svg" alt="loading">
+                    <p><strong>Hardware Engineer</strong></p>
+                    <p class="sub-para">Building and maintaining Computer System & Hardware</p>
+                </div>
+
+                <div class="card card-skills">
+                    <img src="images/2.svg" alt="loading">
+                    <p> <strong>Software Engineer (Full Stack Dev)</strong></p>
+                    <p class="sub-para">Web and desktop software development</p>
+                </div>
+
+                <div class="card card-skills">
+                    <img src="images/3.svg" alt="loading">
+                    <p><strong>Graphic Designer</strong></p>
+                    <p class="sub-para">Create UI/UX graphic designs, logos, Banners, Brouchers, flyers, etc</p>
+                </div>
+
+                <div class="card card-skills">
+                    <img src="images/4.svg" alt="loading">
+                    <p><strong>Network Engineer</strong></p>
+                    <p class="sub-para">networking setup, routers, switches & Infrastructure</p>
+                </div>
+
+                <div class="card card-skills">
+                    <img src="images/5.svg" alt="loading">
+                    <p><strong>Database Administrator</strong></p>
+                    <p class="sub-para">Managing databases, security & performance</p>
+                </div>
+
+                <div class="card card-skills">
+                    <img src="images/6.svg" alt="">
+                    <p><strong>IT Consultant</strong></p>
+                    <p class="sub-para">Proving IT consulting strategic solutions</p>
+                </div>
+            </div>
+
+        </section>
+
+        <section id="about" class="section aboutSection">
+            <h3>Professional Profile</h3>
+            <div class="card">
+                I am an experienced IT professional who blends technology and creativity, with strong hands-on expertise
+                in hardware
+                systems, full-stack software development, networking, database management, IT consulting, and graphic
+                design, focused on
+                crafting secure, scalable, and visually engaging solutions that are efficient, maintainable, and aligned
+                with real
+                business goals
+            </div>
+        </section>
+
+        <section id="contact" class="section section-contact">
+
+            <h3>Contact</h3>
+
+            <p>I'd love you to connect with me</p>
+
+            <div class="card contactSection">
+
+                <div class="cont-linkcard">
+                    <i class="ph ph-map-pin icon icon-loc"></i>
+                    <h5>OUR MAIN OFFICE</h5>
+                    <p>Teshie, Accra, West Africa</p>
+                </div>
+
+                <div class="cont-linkcard">
+                    <i class="ph ph-envelope-simple icon"></i>
+                    <h5>EMAIL</h5>
+                    <p>kcodesubfieldit@gmail.com</p>
+                </div>
+
+                <div class="cont-linkcard">
+                    <i class="ph ph-phone-incoming icon"></i>
+                    <h5>PHONE</h5>
+                    <p>+233 540 000 000 00</p>
+                </div>
+
+                <div class="cont-linkcard">
+                    <i class="ph ph-facebook-logo icon"></i>
+                    <h5>FACEBOOK</h5>
+                    <p>@kcodesubfieldit Profile</p>
+                </div>
+
+            </div>
+
+
+            <section class="card accessories-section">
+                <span>Do you also need any computer accessories?</span>
+                <a href="https://kcodesubfielditstore.com" target="_blank"> Visit KCode Subfield IT Store</a>
+
+
+                <img src="images/all.jpg" alt="">
+
             </section>
 
-        
-            <section class="short-profile">
+            <section class="contact-form-section">
 
-                <p>Hi, I'm Gabriel</p>
-                
-               <span class="spec">Data Analyst, Software Engineer, Graphic Designer </span>
+                <h4>SEND ME A MESSAGE</h4>
 
-                <span>Founder of <strong>KCode SubField IT</strong></span>
-              
+                <form action="#" class="contact-form" id="contact-form">
+                    <label for="name">Enter your full name</label>
+                    <input type="text" title="name" placeholder="" required>
+
+                    <label for="email">Enter a valid email address</label>
+                    <input type="email" placeholder="" required>
+
+                    <label for="message">Your message</label>
+                    <textarea rows="5" placeholder="" required></textarea>
+
+                    <button type="submit">
+                        <i class="ph ph-envelope-simple"></i> Submit</button>
+                </form>
+
             </section>
 
-            <a href="html/home.html">
-                Read more
-                <i class="ph ph-arrow-bend-down-left"></i>
-            </a>
-        </main>
-    </body>
+        </section>
+
+    </main>
+
+    <footer>
+        © 2025 Your Name. All rights reserved.
+    </footer>
+</body>
+
 </html>
