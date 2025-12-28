@@ -176,7 +176,7 @@ header {
     height: min(100dvh);
     transition: 1.5s ease;
     background: radial-gradient(rgba(0, 0, 0, 0.511), rgba(9, 1, 32, 0.856)),
-        url('images/cod.jpg') center/cover no-repeat scroll;
+        url('../images/cod.jpg') center/cover no-repeat scroll;
     object-fit: cover;
     box-sizing: border-box;
 
@@ -263,7 +263,7 @@ header {
     align-items: center;
     overflow: hidden;
     padding: 5px;
-    background: url('images/topbgk.png') center/cover no-repeat scroll;
+    background: url('../images/topbgk.png') center/cover no-repeat scroll;
     min-height: 60dvh;
     box-sizing: border-box;
     object-fit: fill;
